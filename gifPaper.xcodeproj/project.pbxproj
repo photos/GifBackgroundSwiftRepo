@@ -13,6 +13,7 @@
 		A8EBDC491B62905B00EB6D77 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8EBDC481B62905B00EB6D77 /* Images.xcassets */; };
 		A8EBDC4C1B62905B00EB6D77 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8EBDC4A1B62905B00EB6D77 /* LaunchScreen.xib */; };
 		A8EBDC581B62905B00EB6D77 /* gifPaperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EBDC571B62905B00EB6D77 /* gifPaperTests.swift */; };
+		A8EBDC621B62906800EB6D77 /* starsky.gif in Resources */ = {isa = PBXBuildFile; fileRef = A8EBDC611B62906800EB6D77 /* starsky.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		A8EBDC511B62905B00EB6D77 /* gifPaperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gifPaperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EBDC561B62905B00EB6D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8EBDC571B62905B00EB6D77 /* gifPaperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gifPaperTests.swift; sourceTree = "<group>"; };
+		A8EBDC611B62906800EB6D77 /* starsky.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = starsky.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				A8EBDC411B62905B00EB6D77 /* AppDelegate.swift */,
 				A8EBDC431B62905B00EB6D77 /* ViewController.swift */,
+				A8EBDC611B62906800EB6D77 /* starsky.gif */,
 				A8EBDC451B62905B00EB6D77 /* Main.storyboard */,
 				A8EBDC481B62905B00EB6D77 /* Images.xcassets */,
 				A8EBDC4A1B62905B00EB6D77 /* LaunchScreen.xib */,
@@ -156,6 +159,7 @@
 		A8EBDC341B62905B00EB6D77 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Forrest Collins";
 				TargetAttributes = {
@@ -192,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8EBDC621B62906800EB6D77 /* starsky.gif in Resources */,
 				A8EBDC471B62905B00EB6D77 /* Main.storyboard in Resources */,
 				A8EBDC4C1B62905B00EB6D77 /* LaunchScreen.xib in Resources */,
 				A8EBDC491B62905B00EB6D77 /* Images.xcassets in Resources */,
@@ -409,6 +414,7 @@
 				A8EBDC5D1B62905B00EB6D77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8EBDC5E1B62905B00EB6D77 /* Build configuration list for PBXNativeTarget "gifPaperTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +423,7 @@
 				A8EBDC601B62905B00EB6D77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

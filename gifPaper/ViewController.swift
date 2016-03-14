@@ -10,16 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //-------------------
+    // MARK: - UI Outlets
+    //-------------------
+    @IBOutlet var gifWebview: UIWebView!
+    
+    //----------------------
+    // MARK: - View Did Load
+    //----------------------
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let filePath = NSBundle.mainBundle().pathForResource("starsky", ofType: "gif")
+        let gif = NSData(contentsOfFile: filePath!)
+        
+        let webViewBG: UIWebView = gifWebview
+        webViewBG.loadData(gif!, MIMEType: "image/gif", textEncodingName: "UTF-8", baseURL: NSURL(string: "http://localhost/")!)
+        webViewBG.userInteractionEnabled = false;
+        
+        // add black filter to make buttons stand out better
+        let filter = UIView()
+        filter.frame = self.gifWebview.frame
+        filter.backgroundColor = UIColor.blackColor()
+        filter.alpha = 0.05
+        self.gifWebview.addSubview(filter)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
